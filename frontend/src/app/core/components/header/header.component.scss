@@ -1,0 +1,68 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-wrap: wrap;  // Permite o conteúdo quebrar em linhas, se necessário
+
+  &.scrolled {
+    padding: 10px 40px;
+    background-color: #222;
+  }
+
+  .logo {
+    img {
+      height: 50px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .brand-name {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;  // Permite que o nome cresça e ocupe o espaço disponível
+    text-align: center;  // Centraliza o nome da marca
+  }
+
+  nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 65px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f39c12;
+  }
+
+  // Media Query para telas menores, como celulares
+  @media (max-width: 375px) {
+    nav {
+      padding-right: 0;  // Zerando o padding direito em telas menores
+      flex-direction: column;  // Alinhando o menu em coluna
+      gap: 15px;  // Menor espaçamento entre os itens do menu
+    }
+
+    .brand-name {
+      font-size: 16px;  // Ajuste de tamanho de fonte para o mobile
+    }
+  }
+}
