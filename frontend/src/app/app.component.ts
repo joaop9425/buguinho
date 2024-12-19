@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
+import { TitleService } from './core/services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -22,5 +23,8 @@ import { HeaderComponent } from './core/components/header/header.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Buguinho';
+  titlePage = 'Buguinho';
+  constructor(private title: TitleService) {
+    this.title.set(this.titlePage);
+  }
 }

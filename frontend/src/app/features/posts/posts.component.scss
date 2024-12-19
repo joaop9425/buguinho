@@ -16,6 +16,29 @@
     }
   }
 
+  .meme p {
+    justify-content: space-between; /* Nome e foto vão para lados opostos */
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .center {
+    display: flex;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    margin-right: auto; /* Força o nome a ficar à esquerda */
+  }
+  
+  .author-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px; /* Espaço entre o nome e a foto */
+  }  
+
   .pagination {
     display: flex;
     justify-content: center;

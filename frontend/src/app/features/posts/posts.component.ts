@@ -1,59 +1,249 @@
-import { NgFor } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { NgFor } from "@angular/common";
+import { Component, HostListener } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
-  selector: 'app-posts',
+  selector: "app-posts",
   standalone: true,
   imports: [NgFor],
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.scss',
+  templateUrl: "./posts.component.html",
+  styleUrl: "./posts.component.scss",
 })
 export class PostsComponent {
   memes = [
-    { text: 'Meme 01', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 02', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 03', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 04', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 05', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 06', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 07', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 08', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 09', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 10', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 11', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 12', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 13', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 14', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 15', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 16', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 17', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 18', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 19', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 20', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 21', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 22', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 23', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 24', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 25', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 26', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 27', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 28', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 29', imageUrl: 'https://via.placeholder.com/300x200' },
-    { text: 'Meme 30', imageUrl: 'https://via.placeholder.com/300x200' },
+    {
+      title: "meme",
+      text: "Meme 01",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 02",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 03",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 04",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 05",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 06",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 07",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 08",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 09",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 10",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 11",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 12",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 13",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 14",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 15",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 16",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 17",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 18",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 19",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 20",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 21",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 22",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 23",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 24",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 25",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 26",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 27",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 28",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 29",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
+    {
+      title: "meme",
+      text: "Meme 30",
+      imageUrl: "https://via.placeholder.com/300x200",
+      username: "devMaster",
+      userPhoto: "https://via.placeholder.com/30x20",
+    },
   ];
 
   memesPerPage = 10;
   currentPage = 1;
   totalPages = 0;
-  currentPageMemes: { text: string; imageUrl: string }[] = [];
+  currentPageMemes: {
+    title: string,
+    text: string;
+    imageUrl: string,
+    username: string,
+    userPhoto: string,
+  }[] = [];
 
-  constructor(public router: Router, private route: ActivatedRoute) {}
+  constructor(
+    public router: Router,
+    private route: ActivatedRoute,
+  ) {
+  }
 
   ngOnInit() {
     this.totalPages = Math.ceil(this.memes.length / this.memesPerPage);
     this.route.queryParams.subscribe((params) => {
-      const page = +params['page'] || 1; // Padrão para página 1
+      const page = +params["page"] || 1; // Padrão para página 1
       this.currentPage = page > 0 && page <= this.totalPages ? page : 1;
       this.updateCurrentPageMemes();
     });
@@ -83,16 +273,16 @@ export class PostsComponent {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { page: this.currentPage },
-      queryParamsHandling: 'merge', // Preserva outros parâmetros existentes
+      queryParamsHandling: "merge", // Preserva outros parâmetros existentes
     });
     this.updateCurrentPageMemes();
   }
 
-  @HostListener('window:keydown', ['$event'])
+  @HostListener("window:keydown", ["$event"])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if (event.key === 'ArrowRight') {
+    if (event.key === "ArrowRight") {
       this.nextPage();
-    } else if (event.key === 'ArrowLeft') {
+    } else if (event.key === "ArrowLeft") {
       this.previousPage();
     }
   }

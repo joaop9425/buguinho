@@ -14,7 +14,7 @@ export class PostComponent {
   memeId: number;
 
   constructor(public router: Router) {
-    this.memeId = Number(router.url.replace('/', ''))
+    this.memeId = Number(router.url.replace('/meme/', ''));
   }
 
 }
