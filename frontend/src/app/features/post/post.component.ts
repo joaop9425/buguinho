@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post',
@@ -9,5 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './post.component.scss'
 })
 export class PostComponent {
+
+  memeId: number;
+
+  constructor(public router: Router) {
+    this.memeId = Number(router.url.replace('/', ''))
+  }
 
 }

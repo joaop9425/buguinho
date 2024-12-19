@@ -1,8 +1,10 @@
 <div class="postagens-container">
   <div *ngFor="let meme of currentPageMemes; let i = index" class="meme">
-    <h3>Meme #{{ (currentPage - 1) * memesPerPage + i + 1 }}</h3>
-    <p>{{ meme.text }}</p>
-    <img [src]="meme.imageUrl" alt="Meme" />
+    <a (click)="router.navigate([i+1])">
+      <h3>Meme #{{ (currentPage - 1) * memesPerPage + i + 1 }}</h3>
+      <p>{{ meme.text }}</p>
+      <img [src]="meme.imageUrl" alt="Meme" />
+    </a>
   </div>
 
   <div class="pagination">

@@ -48,7 +48,7 @@ export class PostsComponent {
   totalPages = 0;
   currentPageMemes: { text: string; imageUrl: string }[] = [];
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(public router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.totalPages = Math.ceil(this.memes.length / this.memesPerPage);

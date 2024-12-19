@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 })
 export class HeaderComponent {
   scrolled = false;
+
+  constructor(public router: Router) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
