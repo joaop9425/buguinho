@@ -7,7 +7,7 @@
       <p>{{meme.text}}</p>
       <p class="center">
         <strong>Autor:</strong>
-        <span class="author-name">{{ meme.username }}</span>
+        <span class="author-name">{{ meme.username || "Anonimo" }}</span>
         <img class="author-photo" [src]="meme.userPhoto" alt="Foto Autor" />
       </p>
     </a>

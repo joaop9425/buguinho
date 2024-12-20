@@ -2,6 +2,7 @@ import { NgFor } from "@angular/common";
 import { Component, HostListener } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { TitleService } from "../../core/services/title.service";
+import { MemesService } from "../../core/services/memes.service";
 
 @Component({
   selector: "app-posts",
@@ -231,14 +232,15 @@ export class PostsComponent {
     title: string,
     text: string;
     imageUrl: string,
-    username: string,
-    userPhoto: string,
+    username: string | null,
+    userPhoto: string | null,
   }[] = [];
 
   constructor(
     public router: Router,
     private route: ActivatedRoute,
     private title: TitleService,
+    private memesService: MemesService,
   ) {
     this.setTitlePage();
   }
@@ -253,6 +255,10 @@ export class PostsComponent {
       const page = +params["page"] || 1; // Padrão para página 1
       this.currentPage = page > 0 && page <= this.totalPages ? page : 1;
       this.updateCurrentPageMemes();
+    });
+    this.memesService.getMemes().subscribe((res: any) => {
+      console.log(res[0]);
+      this.memes.push(res[0]);
     });
   }
 
