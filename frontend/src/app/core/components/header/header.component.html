@@ -4,13 +4,12 @@
       <img src="assets/imgs/logo.webp" alt="Logo">
     </a>
   </div>
-  <div class="brand-name">
+  <div class="brand-name" (click)="router.navigate(['/'])">
     🐛 Buguinho Memes Tech 🐞
     <small>Meme4Devs</small>
   </div>
   <nav>
-    <a routerLink="/" routerLinkActive="active">Início</a>
-    <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
-    <a routerLink="/contato" routerLinkActive="active">Contato</a>
+    <a (click)="router.navigate(['/'])" routerLink="/" routerLinkActive="active">Início</a>
+    <a (click)="router.navigate(['/sobre'])" routerLink="/sobre" routerLinkActive="active">Sobre</a>
   </nav>
 </header>

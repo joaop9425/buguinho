@@ -9,19 +9,16 @@
         <strong>Autor:</strong>
         <span class="author-name">{{ meme.username }}</span>
         <img class="author-photo" [src]="meme.userPhoto" alt="Foto Autor" />
-      </p>      
+      </p>
     </a>
   </div>
 
   <div class="pagination">
-    <button (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
     <span>Página {{ currentPage }} de {{ totalPages }}</span>
-    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Próxima</button>
   </div>
-</div>
-
-<!-- Botões flutuantes -->
-<div class="floating-buttons">
-  <button (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
-  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Próxima</button>
+  <!-- Botões flutuantes -->
+  <div class="floating-buttons">
+    <button class="previous" (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
+    <button class="next" (click)="nextPage()" [disabled]="currentPage === totalPages">Próxima</button>
+  </div>
 </div>

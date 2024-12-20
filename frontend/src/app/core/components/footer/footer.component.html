@@ -1,8 +1,7 @@
 <footer>
   <nav>
-    <a routerLink="/" routerLinkActive="active">Início</a>
-    <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
-    <a routerLink="/contato" routerLinkActive="active">Contato</a>
+    <a (click)="router.navigate(['/'])" routerLink="/" routerLinkActive="active">Início</a>
+    <a (click)="router.navigate(['/sobre'])" routerLink="/sobre" routerLinkActive="active">Sobre</a>
   </nav>
   <p>&copy; {{ year }} 🐛 Buguinho Memes Tech 🐞</p>
 </footer>

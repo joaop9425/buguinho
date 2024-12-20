@@ -20,6 +20,7 @@ header {
   }
 
   .logo {
+    cursor: pointer;
     img {
       height: 50px;
       transition: all 0.3s ease;
@@ -35,6 +36,7 @@ header {
     align-items: center; /* Centraliza o texto na horizontal */
     flex-grow: 1; /* Permite que o nome cresça e ocupe o espaço disponível */
     text-align: center; /* Centraliza o texto */
+    cursor: pointer;
   }
   
   .brand-name small {
@@ -55,6 +57,7 @@ header {
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
+    cursor: pointer;
   }
 
   nav a:hover {
