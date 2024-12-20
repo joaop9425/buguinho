@@ -1,6 +1,7 @@
 import { NgFor } from "@angular/common";
 import { Component, HostListener } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
+import { TitleService } from "../../core/services/title.service";
 
 @Component({
   selector: "app-posts",
@@ -237,7 +238,13 @@ export class PostsComponent {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
+    private title: TitleService,
   ) {
+    this.setTitlePage();
+  }
+
+  setTitlePage() {
+    this.title.set(`Buguinho | Página ${this.currentPage}`);
   }
 
   ngOnInit() {
@@ -253,6 +260,7 @@ export class PostsComponent {
     const startIndex = (this.currentPage - 1) * this.memesPerPage;
     const endIndex = startIndex + this.memesPerPage;
     this.currentPageMemes = this.memes.slice(startIndex, endIndex);
+    this.setTitlePage();
   }
 
   nextPage() {

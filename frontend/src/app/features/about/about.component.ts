@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleService } from '../../core/services/title.service';
 
 @Component({
   selector: 'app-about',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+
+  constructor(private title: TitleService) {
+    this.title.set('Buguinho | Sobre');
+  }
 
 }
