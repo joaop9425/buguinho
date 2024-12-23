@@ -53,7 +53,7 @@ Adicione um novo objeto ao arquivo no formato:
 ```json
    {
       "title": "Título do Meme",
-      "imageUrl": "URL da imagem do meme",
+      "mediaUrl": "URL da imagem do meme",
       "text": "Descrição ou legenda do meme",
       "username": "Seu nome ou nickname",
       "userPhoto": "URL da sua foto de perfil (opcional)"
