@@ -21,6 +21,7 @@ header {
 
   .logo {
     cursor: pointer;
+
     img {
       height: 50px;
       transition: all 0.3s ease;
@@ -32,18 +33,26 @@ header {
     margin-left: 10px;
     font-weight: bold;
     display: flex;
-    flex-direction: column; /* Alinha o texto principal e o "small" em coluna */
-    align-items: center; /* Centraliza o texto na horizontal */
-    flex-grow: 1; /* Permite que o nome cresça e ocupe o espaço disponível */
-    text-align: center; /* Centraliza o texto */
+    flex-direction: column;
+    /* Alinha o texto principal e o "small" em coluna */
+    align-items: center;
+    /* Centraliza o texto na horizontal */
+    flex-grow: 1;
+    /* Permite que o nome cresça e ocupe o espaço disponível */
+    text-align: center;
+    /* Centraliza o texto */
     cursor: pointer;
   }
-  
+
   .brand-name small {
-    font-size: 12px; /* Tamanho menor para o "Meme4Devs" */
-    font-weight: normal; /* Peso normal para diferenciar do título */
-    color: #ccc; /* Tom de cinza mais claro para contraste */
-    margin-top: 4px; /* Espaçamento entre o título e o "Meme4Devs" */
+    font-size: 12px;
+    /* Tamanho menor para o "Meme4Devs" */
+    font-weight: normal;
+    /* Peso normal para diferenciar do título */
+    color: #ccc;
+    /* Tom de cinza mais claro para contraste */
+    margin-top: 4px;
+    /* Espaçamento entre o título e o "Meme4Devs" */
   }
 
   nav {
@@ -74,6 +83,46 @@ header {
 
     .brand-name {
       font-size: 16px; // Ajuste de tamanho de fonte para o mobile
+    }
+  }
+
+  .falling {
+    animation: fall 2s linear infinite;
+  }
+
+  .flying {
+    animation: fly 5s linear infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  @keyframes fly {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    25% {
+      transform: translate(50vw, -50vh);
+    }
+
+    50% {
+      transform: translate(-50vw, 50vh);
+    }
+
+    75% {
+      transform: translate(50vw, 50vh);
+    }
+
+    100% {
+      transform: translate(0, 0);
     }
   }
 }

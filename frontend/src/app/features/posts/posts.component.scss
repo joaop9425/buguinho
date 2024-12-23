@@ -16,66 +16,37 @@
     }
   }
 
-  .meme p {
-    justify-content: space-between; /* Nome e foto vão para lados opostos */
-    align-items: center; /* Centraliza verticalmente */
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .center {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
   }
-  
+
   .author-name {
     font-weight: bold;
-    margin-right: auto; /* Força o nome a ficar à esquerda */
+    margin-right: auto;
   }
-  
+
   .author-photo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-left: 10px; /* Espaço entre o nome e a foto */
-  }  
+    margin-left: 10px;
+  }
 
   .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     margin-top: 20px;
   }
 
-  /* Botões flutuantes nas bordas */
   .floating-buttons {
-    position: relative;
-    bottom: 20px; /* Distância do fundo */
-    left: 20px;   /* Distância da borda esquerda */
-    right: 20px;  /* Distância da borda direita */
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    margin-top: 10px;
 
     button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4caf50;
-      color: #fff;
-      border: none;
+      padding: 10px;
       border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #4caf59;
-      }
-
-      &:disabled {
-        background-color: #ccc;
-        cursor: not-allowed;
-      }
+      font-size: 14px;
     }
   }
 }
