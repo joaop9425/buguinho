@@ -46,7 +46,7 @@ Este projeto foi desenvolvido com a ajuda do **ChatGPT**, que colaborou ativamen
 
 Adoraríamos receber suas contribuições! 😄 Para adicionar um novo meme ao blog, siga os passos abaixo:
 
-1. Edite o arquivo `memes.json`, que está localizado na pasta `src/assets`.  
+1. Edite o arquivo `memes.json`, que está localizado na pasta `src/assets/json`.  
 
 Adicione um novo objeto ao arquivo no formato:
 
