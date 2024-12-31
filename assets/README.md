@@ -66,7 +66,7 @@ Adicione um novo objeto ao arquivo no formato:
 ```bash
    git add src/assets/memes.json
    git commit -m "Adicionado novo meme"
-   git push origin main
+   git push origin gh-pages
 ```
 
 4. Abra um Pull Request no repositório original, explicando suas alterações.  
