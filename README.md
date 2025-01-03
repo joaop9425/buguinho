@@ -64,9 +64,9 @@ Adicione um novo objeto ao arquivo no formato:
 
 3. Após editar o arquivo `memes.json`, envie as alterações para o seu fork no GitHub:  
 ```bash
-   git add src/assets/memes.json
+   git add src/assets/json/memes.json
    git commit -m "Adicionado novo meme"
-   git push origin main
+   git push origin gh-pages
 ```
 
 4. Abra um Pull Request no repositório original, explicando suas alterações.  
