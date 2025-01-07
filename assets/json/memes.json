@@ -1,5 +1,199 @@
 [
   {
+    "title": "E.T",
+    "mediaUrl": "https://i.pinimg.com/236x/5d/ce/83/5dce834b3799cf43a8ae4b6fb493d4f9.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Motive-se",
+    "mediaUrl": "https://i.pinimg.com/236x/aa/5b/d3/aa5bd364d344c1d88c547ae64b574d46.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "modos do dev",
+    "text": "só existe esses dois e me convensa que não é verdade",
+    "mediaUrl": "https://i.pinimg.com/236x/36/5c/cf/365ccfeb08198c1e967a73300ecaaf11.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "nuvem",
+    "text": "a melhor explicação",
+    "mediaUrl": "https://i.pinimg.com/736x/1a/fa/19/1afa196e89e0d1adfa0b7620f0ff969b.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Engineer",
+    "text": "Eu não sou engenheiro, mas...",
+    "mediaUrl": "https://i.pinimg.com/736x/87/d6/9c/87d69c924be1cf3797da0c6e36e57c26.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Café",
+    "text": "a bebida dos programadores",
+    "mediaUrl": "https://i.pinimg.com/236x/37/f4/da/37f4da730c2c50edd6c78595ddf50f48.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "traduções",
+    "text": "minicurso para você que não sabe inglês",
+    "mediaUrl": "https://i.pinimg.com/736x/30/10/64/3010646600650277b3053797322ac486.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "IA",
+    "text": "Inteligencia Artificial x IF",
+    "mediaUrl": "https://i.pinimg.com/236x/ef/34/05/ef3405044227b0d99931c3e3e9b07c8b.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Fiel",
+    "text": "Até em SO",
+    "mediaUrl": "https://i.pinimg.com/236x/8c/c5/57/8cc557813f8b2583ac5f9195d3d00e6f.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Erro na linha #",
+    "text": "E quando não tem a linha # no código ?",
+    "mediaUrl": "https://i.pinimg.com/736x/80/58/c1/8058c1b4c094e0bdde6809be4546b08f.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Documentação",
+    "text": "documente suas funções.",
+    "mediaUrl": "https://preview.redd.it/youneedtobeverydetailed-v0-8j17rjqgye9e1.jpeg?width=640&crop=smart&auto=webp&s=ec7a223b00c0b495024397842789533de42506a4",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "gitflow",
+    "text": "use mensagens que façam sentido, não só \"fix\" ou \"update\"",
+    "mediaUrl": "https://preview.redd.it/averagegithubcommits-v0-llimluaf7t9e1.png?auto=webp&s=2c7c9a9f9d018779865f99d1f042c7c396a8ea9a",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "só acredito vendo",
+    "text": "eu vendo e não acreditando",
+    "mediaUrl": "https://preview.redd.it/kmmqnqzz2s9e1.jpeg?width=640&crop=smart&auto=webp&s=bcd7e368687cb136279280ca6cf51e5128650e14",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "feriado",
+    "text": "antes do feriado eu não programo porque tenho ansiedade, depois fica dificil pq não sei mais o que precisava fazer",
+    "mediaUrl": "https://preview.redd.it/whatthehelliseventhat-v0-324qgltokx9e1.jpeg?width=640&crop=smart&auto=webp&s=4fdf563f57b7113154f014d1c4b381238c549eb9",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Eu nao sou frontend",
+    "text": "mas me pareceu 🔝",
+    "mediaUrl": "https://preview.redd.it/whitetextwhitebackground-v0-sk7oav2cz6ae1.jpeg?width=640&crop=smart&auto=webp&s=dd8ddad3e7fcb80bfb9074a27bfe4cf9b3559e5b",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "escolhas",
+    "text": "meu voto vai para opensource autohosteada, rodando num i386 com 2mb de ram",
+    "mediaUrl": "https://preview.redd.it/tough-choice-right-v0-nlep8b8usf3d1.png?auto=webp&s=5e898ec097ab7cac69279d61ba37b48e87dc28a2",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Se paguei por 2Tb, eu quero 2Tb",
+    "text": "a fornecedora: \"a construção desse hardware não permite ter esse valor exato e por isso é aproximado.\"",
+    "mediaUrl": "https://preview.redd.it/ntjbmb72yutc1.jpeg?width=640&crop=smart&auto=webp&s=a5673968d17247ad3596ddb815af327c949846e0",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "O programador nunca deve quebrar essa regra",
+    "text": "A regra é se ta funcionando não mexa.",
+    "mediaUrl": "https://external-preview.redd.it/eu-ri-eu-ri-de-um-meme-da-pichau-v0-bXBrbXdzaXZxZHhkMRsJvRHaRor5Np_mLuxRcmjp0djrCKA4P9fS1OhSdzqP.png?width=640&crop=smart&format=pjpg&auto=webp&s=3854a2ff40019c7e6879e37dff643fdf6dc8d57d",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Redes Wifi",
+    "text": "Se a sua rede não se chama \"Vírus\", você não é de TI",
+    "mediaUrl": "https://preview.redd.it/rede-wi-fi-cavalo-de-tr%C3%B3ia-v0-7rz8qsvkhn9c1.jpeg?width=640&crop=smart&auto=webp&s=06abcb1d5316048760b97fb57ca4bd3decead2ef",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Operadores",
+    "text": "o operador % foi criado em 2999, programadores antes disso: ",
+    "mediaUrl": "https://preview.redd.it/vtyt87v7jm891.jpg?auto=webp&s=aa165db0b9cd3a031eff6f6b13a013784377be5f",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "O pc de vcs tem opção de desligar ?",
+    "text": "Eu não desligo a tempos",
+    "mediaUrl": "https://preview.redd.it/j5xiqswfljm81.jpg?auto=webp&s=85e109218e38f11cf8e53d00ddba170be1e565bb",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "hehehe",
+    "text": "Eu tb tenho uma pasta de projetos assim, além de um monte de repositórios no github que nunca saiu nem o \"init project\"",
+    "mediaUrl": "https://preview.redd.it/s%C3%B3-eu-que-tenho-a-pasta-de-projetos-inacabados-v0-r3qwaloj0mea1.jpg?width=640&crop=smart&auto=webp&s=d41bb4806f002fa354f50edd062e89c284843007",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "é caro",
+    "text": "5 dias depois... Novo post no reddit: \"Galera meu pc parou\"",
+    "mediaUrl": "https://preview.redd.it/cooler-%C3%A9-caro-demais-v0-rg1agxv3gw4e1.jpeg?width=640&crop=smart&auto=webp&s=6b0fe1870175ce29ff1aed7957467e13d3004392",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Montagem",
+    "text": "saber o que escolher é diferente de poder ter",
+    "mediaUrl": "https://preview.redd.it/me-veio-esse-meme-na-cabe%C3%A7a-de-madrugada-v0-1d8xa8j9sg2e1.png?auto=webp&s=09c72811f7f357d7cf211cf1be24879ceae34648",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Reconhecendo profissionais",
+    "text": "é assim...",
+    "mediaUrl": "https://preview.redd.it/mb1duc6qxjja1.jpg?width=640&crop=smart&auto=webp&s=f0948ae2e5bb304d167815b1498a7946984dc6d5",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Onde buscar respostas",
+    "text": "Se não existe no youtube, não existe.",
+    "mediaUrl": "https://preview.redd.it/e-quanto-mais-senior-voc%C3%AA-fica-mais-a-ordem-do-meme-se-v0-ajq1ksecml991.jpg?auto=webp&s=9a06c8a7bbe7d630381bfe9abba0d524a50a6021",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Tempo",
+    "text": "Leva muito tempo pra achar, pouco pra corrigir",
+    "mediaUrl": "https://preview.redd.it/meme-o-que-realmente-faz-voc%C3%AA-ficar-horas-procurando-pelo-v0-2zduynkn34v81.png?auto=webp&s=0227cef5d4d60e156b93c3199c73ba679fa48038",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "100%",
+    "text": "Estratégia 🧠",
+    "mediaUrl": "https://preview.redd.it/toda-vez-que-vejo-esse-meme-imagino-que-aconteceu-nesse-sub-v0-fjyjyha5llga1.jpg?width=640&crop=smart&auto=webp&s=0329a89cd8cdcfb4fdcd8420ea34f0cf937983a1",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
     "title": "Setup gamer fullstack",
     "text": "A roupa sai limpa e você satisfeito por ter tempo de jogar",
     "mediaUrl": "https://preview.redd.it/algu%C3%A9m-sabe-se-roda-rdr-no-meu-setup-v0-d370q7tex29e1.png?width=640&crop=smart&auto=webp&s=2745877f502164948bbcf3dd748e4d0ae057e8c3",
