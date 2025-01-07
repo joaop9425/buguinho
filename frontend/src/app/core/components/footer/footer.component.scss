@@ -8,6 +8,11 @@ footer {
   width: 100%;
   font-size: 14px;
 
+  &.scrolled {
+    display: none;
+    background-color: #222;
+  }
+
   nav {
     margin-bottom: 5px;
 

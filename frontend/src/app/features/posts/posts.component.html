@@ -1,6 +1,6 @@
 <div class="postagens-container">
   <div *ngFor="let meme of currentPageMemes; let i = index" class="meme">
-    <a (click)="router.navigate(['/meme', (currentPage - 1) * memesPerPage + i + 1])">
+    <a (click)="sendMemeToComponent(meme)">
       <h3 *ngIf="meme.title">{{ meme.title }}</h3>
       <h3 *ngIf="!meme.title">Meme #{{ (currentPage - 1) * memesPerPage + i + 1 }}</h3>
 
@@ -18,7 +18,7 @@
         <img
           class="author-photo"
           [src]="meme.userPhoto || 'assets/imgs/user1.jpg'"
-          alt="Foto do Autor"
+          alt="Foto"
         />
       </p>
     </a>

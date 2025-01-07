@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,16 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  scrolled = false;
   year = new Date().getFullYear();
 
   constructor(
     public router: Router,
   ) { }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.scrolled = window.pageYOffset > 100;
+  }
 
 }
