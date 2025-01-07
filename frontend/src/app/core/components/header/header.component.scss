@@ -6,7 +6,7 @@ header {
   width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 20px 40px;
+  padding: 35px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,7 @@ header {
   flex-wrap: wrap; // Permite o conteúdo quebrar em linhas, se necessário
 
   &.scrolled {
-    padding: 10px 40px;
+    padding: 0px 25px;
     background-color: #222;
   }
 

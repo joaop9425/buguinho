@@ -3,6 +3,7 @@ import { Component, HostListener } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { TitleService } from "../../core/services/title.service";
 import { MemesService } from "../../core/services/memes.service";
+import { Meme, Memes } from "./memes.model";
 
 @Component({
   selector: "app-posts",
@@ -15,13 +16,7 @@ import { MemesService } from "../../core/services/memes.service";
   styleUrls: ["./posts.component.scss"],
 })
 export class PostsComponent {
-  memes: {
-    title: string;
-    text: string;
-    mediaUrl: string;
-    username: string | null;
-    userPhoto: string | null;
-  }[] = [];
+  memes: Memes = [];
   memesPerPage = 10;
   currentPage = 1;
   totalPages = 0;
@@ -32,7 +27,7 @@ export class PostsComponent {
     private route: ActivatedRoute,
     private titleService: TitleService,
     private memesService: MemesService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.memesService.getMemes().subscribe((res: any) => {
@@ -62,6 +57,7 @@ export class PostsComponent {
     if (this.currentPage < this.totalPages) {
       this.currentPage++;
       this.updateUrl();
+      this.scrollToTop();
     }
   }
 
@@ -69,6 +65,7 @@ export class PostsComponent {
     if (this.currentPage > 1) {
       this.currentPage--;
       this.updateUrl();
+      this.scrollToTop();
     }
   }
 
@@ -79,6 +76,10 @@ export class PostsComponent {
       queryParamsHandling: "merge",
     });
     this.updateCurrentPageMemes();
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   isImage(url: string): boolean {
@@ -96,5 +97,12 @@ export class PostsComponent {
     } else if (event.key === "ArrowLeft") {
       this.previousPage();
     }
+  }
+
+  sendMemeToComponent(meme: Meme) {
+    this.router.navigate(
+      ['/meme/' + Number(this.memes.indexOf(meme) + 1)],
+      { state: { meme } }
+    );
   }
 }

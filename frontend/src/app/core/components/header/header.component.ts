@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, HostListener, Renderer2, ElementRef } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router } from '@angular/router';
@@ -5,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatToolbarModule],
+  imports: [MatToolbarModule, NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -55,5 +56,9 @@ export class HeaderComponent {
         this.clickCountBug2 = 0;
       }, 5000);
     }
+  }
+
+  public scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
