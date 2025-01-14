@@ -1,5 +1,74 @@
 [
   {
+    "title": "Te apruma",
+    "mediaUrl": "https://i.pinimg.com/736x/4d/25/37/4d2537cd3382b5fba9c6dbe8c62bf152.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Tudo é app",
+    "text": "vlw Steve Jobs",
+    "mediaUrl": "https://i.pinimg.com/736x/7b/4b/34/7b4b343fd9cddb0a9200583059b18806.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Open to work",
+    "text": "Até no github",
+    "mediaUrl": "https://i.pinimg.com/736x/d3/8a/e6/d38ae68410f3c91c8dad95981fc4bb9c.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Antigamente...",
+    "text": "Isso aqui era tudo ~mato~ C, outros podem dizer fortran (1950). Ou Assembly (1940). Ou a própria máquina de Turing (1930).",
+    "mediaUrl": "https://i.pinimg.com/736x/a7/a6/72/a7a672c99ab302e9d0317c648a94a529.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "utilitários",
+    "text": "Vai que ajuda alguem...",
+    "mediaUrl": "https://i.pinimg.com/736x/92/a8/08/92a8081c9692f9722e4730432661776c.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": ";",
+    "text": "o C perguntando quando vc esquece o \";\": \"Como é amigo ?\"",
+    "mediaUrl": "https://i.pinimg.com/736x/86/6a/08/866a0857d1cdc4395d85fd8167acb8e5.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Se eu soubesse antes...",
+    "text": "Que era só desenvolver uma IA para desenvolver qualquer outra coisa, teria prestado mais atenção nas aulas.",
+    "mediaUrl": "https://i.pinimg.com/736x/54/6d/a6/546da6b0a205d9a24f567ad7a1189a1f.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "TCP x UDP",
+    "text": "exemplo melhor que esse não existe",
+    "mediaUrl": "https://i.pinimg.com/736x/91/5a/98/915a98d251a0a270b9fc5bd81bb23089.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JSON",
+    "text": "Statham",
+    "mediaUrl": "https://i.pinimg.com/736x/88/82/dd/8882ddd9c345982afb83011cfdc21233.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Inconfundivel",
+    "text": "Até entregar o projeto",
+    "mediaUrl": "https://i.pinimg.com/736x/d4/37/d7/d437d75f2bd54c814e504044152f0ca9.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
     "title": "Termos",
     "text": "Dissonauro de pogramação atualizado",
     "mediaUrl": "https://i.pinimg.com/736x/0a/d0/df/0ad0df6676d3d62f0e132f6bf5dfb39c.jpg",
