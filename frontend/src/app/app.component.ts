@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -24,7 +25,7 @@ import { TitleService } from './core/services/title.service';
 })
 export class AppComponent {
   titlePage = 'Buguinho';
-  constructor(private title: TitleService) {
+  constructor(private title: TitleService, private route: ActivatedRoute) {
     this.title.set(this.titlePage);
   }
 }

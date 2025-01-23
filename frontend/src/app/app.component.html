@@ -1,7 +1,10 @@
 <app-header></app-header>
 
-<main class="content">
-  <router-outlet></router-outlet>
-</main>
+<div class="container">
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+  <router-outlet name="secondary"></router-outlet>
+</div>
 
 <app-footer></app-footer>

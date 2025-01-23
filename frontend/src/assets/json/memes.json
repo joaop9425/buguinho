@@ -1,5 +1,245 @@
 [
   {
+    "title": "Inspiração",
+    "text": "Copia mas não faz igual",
+    "mediaUrl": "https://i.pinimg.com/736x/f6/77/e2/f677e2d8583ff55c8645a7409ea9f8dc.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Código no papel",
+    "text": "Mas é só criar um compilador que entenda garranchos",
+    "mediaUrl": "https://i.pinimg.com/736x/6f/83/f4/6f83f49c8ab95163c2357aea8f8e95ab.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Alma gemea",
+    "text": "Só que não",
+    "mediaUrl": "https://i.pinimg.com/736x/1b/ad/6c/1bad6cc67206387623a3929de9cc5d23.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Encontrei",
+    "mediaUrl": "https://i.pinimg.com/736x/ff/af/55/ffaf55d966ae21eb0ff04d1e8d39c1b6.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Neural network",
+    "mediaUrl": "https://i.pinimg.com/736x/30/04/01/300401acf9f11e624c812868433f6ba1.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Pet novo",
+    "mediaUrl": "https://i.pinimg.com/736x/e0/68/32/e068324415dda2a2358ac783c57faed2.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "As linguagens na faculdade",
+    "mediaUrl": "https://i.pinimg.com/736x/d4/12/9a/d4129a6e3c1c7456cbf45744c7e111a0.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JS",
+    "text": "Hoje é só isso mesmo",
+    "mediaUrl": "https://i.pinimg.com/736x/21/7a/91/217a91a35b29631dc12a844f07d7ef78.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Te apruma",
+    "mediaUrl": "https://i.pinimg.com/736x/4d/25/37/4d2537cd3382b5fba9c6dbe8c62bf152.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Tudo é app",
+    "text": "vlw Steve Jobs",
+    "mediaUrl": "https://i.pinimg.com/736x/7b/4b/34/7b4b343fd9cddb0a9200583059b18806.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Open to work",
+    "text": "Até no github",
+    "mediaUrl": "https://i.pinimg.com/736x/d3/8a/e6/d38ae68410f3c91c8dad95981fc4bb9c.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Antigamente...",
+    "text": "Isso aqui era tudo ~mato~ C, outros podem dizer fortran (1950). Ou Assembly (1940). Ou a própria máquina de Turing (1930).",
+    "mediaUrl": "https://i.pinimg.com/736x/a7/a6/72/a7a672c99ab302e9d0317c648a94a529.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "utilitários",
+    "text": "Vai que ajuda alguem...",
+    "mediaUrl": "https://i.pinimg.com/736x/92/a8/08/92a8081c9692f9722e4730432661776c.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": ";",
+    "text": "o C perguntando quando vc esquece o \";\": \"Como é amigo ?\"",
+    "mediaUrl": "https://i.pinimg.com/736x/86/6a/08/866a0857d1cdc4395d85fd8167acb8e5.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Se eu soubesse antes...",
+    "text": "Que era só desenvolver uma IA para desenvolver qualquer outra coisa, teria prestado mais atenção nas aulas.",
+    "mediaUrl": "https://i.pinimg.com/736x/54/6d/a6/546da6b0a205d9a24f567ad7a1189a1f.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "TCP x UDP",
+    "text": "exemplo melhor que esse não existe",
+    "mediaUrl": "https://i.pinimg.com/736x/91/5a/98/915a98d251a0a270b9fc5bd81bb23089.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JSON",
+    "text": "Statham",
+    "mediaUrl": "https://i.pinimg.com/736x/88/82/dd/8882ddd9c345982afb83011cfdc21233.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Inconfundivel",
+    "text": "Até entregar o projeto",
+    "mediaUrl": "https://i.pinimg.com/736x/d4/37/d7/d437d75f2bd54c814e504044152f0ca9.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Termos",
+    "text": "Dissonauro de pogramação atualizado",
+    "mediaUrl": "https://i.pinimg.com/736x/0a/d0/df/0ad0df6676d3d62f0e132f6bf5dfb39c.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Ei...",
+    "text": "Você já ouviu falar... ?",
+    "mediaUrl": "https://i.pinimg.com/736x/56/f3/ac/56f3ac4e1481a9390af6e38f50c3bdd8.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Para sua segurança, corte aqui",
+    "text": "Melhor que qualquer DMZ",
+    "mediaUrl": "https://i.pinimg.com/736x/eb/1c/42/eb1c420ce75547a04772126feb8025d9.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Conjuntos",
+    "text": "Se um dia eu for professor de matemática, vou ensinar assim",
+    "mediaUrl": "https://i.pinimg.com/736x/0a/a7/04/0aa704172fe4ac9125f827a9293c289d.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Você é de qual tipo ?",
+    "text": "Ou melhor, qual sua semantica para escrever código ?",
+    "mediaUrl": "https://i.pinimg.com/736x/ad/2e/0a/ad2e0ab7329058b3a19530b5360dddb9.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "O real significado de TI",
+    "text": "TUDO INCLUSO, Ta na tomada, tem bateria ou se conecta na internet... é TI",
+    "mediaUrl": "https://i.pinimg.com/236x/ad/62/f9/ad62f9ffde43b50e00816e67389c894e.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "never sleep",
+    "text": "I'm a programmer, I never sleep",
+    "mediaUrl": "https://i.pinimg.com/736x/e7/52/2a/e7522a1b4b36d4fb7b521552cb0354ef.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Leitura diária",
+    "text": "Ler código pode ser considerado como leitura diária ?",
+    "mediaUrl": "https://i.pinimg.com/736x/44/93/43/449343ba596cf5d8c45d106547f8f0ba.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Você ESTAva demitido",
+    "text": "Agora está recontratado",
+    "mediaUrl": "https://i.pinimg.com/736x/f7/c2/9a/f7c29ab1d27a9a9b435081b0949626ad.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Educação",
+    "text": "Vocês também estão tentando evitar o acopalipes ?",
+    "mediaUrl": "https://i.pinimg.com/736x/b8/10/2f/b8102ff8920784bca3981e7fa64024d2.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Ninja",
+    "text": "Ele tenta passar desapercebido",
+    "mediaUrl": "https://i.pinimg.com/736x/be/9e/d2/be9ed226a90fa206f2ae44467262c0de.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Java",
+    "text": "Aaahh... o Java...",
+    "mediaUrl": "https://i.pinimg.com/736x/df/ae/2a/dfae2a7cba82da6d02fe78ac4f24fae6.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Da série dos Senior's",
+    "text": "é brincadeira, eu ainda preciso de ajuda",
+    "mediaUrl": "https://i.pinimg.com/736x/f5/c4/0c/f5c40c3f9cb658afcc55583b67f8b7ea.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Resposta padrão do Senior",
+    "text": "Agora é: Se o ChatGPT não sabe, não existe.",
+    "mediaUrl": "https://i.pinimg.com/736x/0b/2b/13/0b2b135cf440184241368d570c247568.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Caiu",
+    "text": "Não vai ser tão simples resolver",
+    "mediaUrl": "https://i.pinimg.com/736x/f3/58/83/f3588363841be2066324482cb44b7d74.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "No céu tem...?",
+    "text": "Você não vai saber",
+    "mediaUrl": "https://i.pinimg.com/736x/f7/b4/e9/f7b4e9a184af58fad6c86adaebd5acb4.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "magico",
+    "text": "Mago da TI",
+    "mediaUrl": "https://i.pinimg.com/736x/10/52/f1/1052f12ca80f856ddfbec515d85b1917.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
     "title": "Programming",
     "text": "Nem por um milagre",
     "mediaUrl": "https://i.pinimg.com/236x/26/dc/9c/26dc9c9e83f005519b75c85c87889ea8.jpg",
@@ -106,13 +346,6 @@
     "title": "feriado",
     "text": "antes do feriado eu não programo porque tenho ansiedade, depois fica dificil pq não sei mais o que precisava fazer",
     "mediaUrl": "https://preview.redd.it/whatthehelliseventhat-v0-324qgltokx9e1.jpeg?width=640&crop=smart&auto=webp&s=4fdf563f57b7113154f014d1c4b381238c549eb9",
-    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
-    "username": "Jota"
-  },
-  {
-    "title": "Eu nao sou frontend",
-    "text": "mas me pareceu 🔝",
-    "mediaUrl": "https://preview.redd.it/whitetextwhitebackground-v0-sk7oav2cz6ae1.jpeg?width=640&crop=smart&auto=webp&s=dd8ddad3e7fcb80bfb9074a27bfe4cf9b3559e5b",
     "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
     "username": "Jota"
   },
