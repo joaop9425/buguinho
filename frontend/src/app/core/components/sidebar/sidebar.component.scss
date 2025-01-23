@@ -1,7 +1,7 @@
 .sidebar {
     width: 250px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #333;
     
     position: fixed;
     top: 0;
@@ -18,9 +18,11 @@
 
 .online-users {
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .contributors {
+    color: #fff;
     .contributor {
         display: flex;
         align-items: center;
@@ -36,6 +38,7 @@
 }
 
 .hours {
+    color: #fff;
     span {
         cursor: default;
     }
