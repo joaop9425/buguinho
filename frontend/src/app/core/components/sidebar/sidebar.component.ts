@@ -1,5 +1,6 @@
 import { NgFor } from "@angular/common";
 import { Component, OnDestroy, OnInit } from "@angular/core";
+import { UserCountService } from "../../services/user-count.service";
 
 @Component({
   selector: "app-left-sidebar",
@@ -18,11 +19,19 @@ export class LeftSidebarComponent implements OnInit, OnDestroy {
   hours = "00:00:00";
   referenceHours: any;
 
+  constructor(
+    private userCountService: UserCountService,
+  ) {}
+
   ngOnInit() {
     this.currentTime();
     this.referenceHours = setInterval(() => {
       this.currentTime();
     }, 1000);
+
+    // this.userCountService.getActiveUsers().subscribe((data: any) => {
+    //   console.log(data);
+    // });
   }
 
   ngOnDestroy(): void {
