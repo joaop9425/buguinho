@@ -4,12 +4,7 @@
       <h3 *ngIf="meme.title">{{ meme.title }}</h3>
       <h3 *ngIf="!meme.title">Meme #{{ (currentPage - 1) * memesPerPage + i + 1 }}</h3>
 
-      <img [src]="meme.mediaUrl || 'https://via.placeholder.com/300x200'" alt="Meme" />
-
-      <!-- <div class="media-container">
-        <img *ngIf="isImage(meme.mediaUrl)" [src]="meme.mediaUrl" alt="Meme" />
-        <video *ngIf="isVideo(meme.mediaUrl)" [src]="meme.mediaUrl" controls preload="metadata"></video>
-      </div> -->
+      <app-media [mediaUrl]="meme.mediaUrl"></app-media>
 
       <p>{{ meme.text }}</p>
       <p class="center">

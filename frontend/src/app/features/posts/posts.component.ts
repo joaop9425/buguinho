@@ -1,17 +1,15 @@
 import { NgFor, NgIf } from "@angular/common";
 import { Component, HostListener } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { TitleService } from "../../core/services/title.service";
 import { MemesService } from "../../core/services/memes.service";
+import { TitleService } from "../../core/services/title.service";
+import { MediaComponent } from "./media.component";
 import { Meme, Memes } from "./memes.model";
 
 @Component({
   selector: "app-posts",
   standalone: true,
-  imports: [
-    NgFor,
-    NgIf,
-  ],
+  imports: [NgFor, NgIf, MediaComponent],
   templateUrl: "./posts.component.html",
   styleUrls: ["./posts.component.scss"],
 })
@@ -26,8 +24,8 @@ export class PostsComponent {
     public router: Router,
     private route: ActivatedRoute,
     private titleService: TitleService,
-    private memesService: MemesService,
-  ) { }
+    private memesService: MemesService
+  ) {}
 
   ngOnInit() {
     this.memesService.getMemes().subscribe((res: any) => {
@@ -35,8 +33,7 @@ export class PostsComponent {
       this.totalPages = Math.ceil(this.memes.length / this.memesPerPage);
       this.route.queryParams.subscribe((params) => {
         const page = +params["page"] || 1;
-        this.currentPage =
-          page > 0 && page <= this.totalPages ? page : 1;
+        this.currentPage = page > 0 && page <= this.totalPages ? page : 1;
         this.updateCurrentPageMemes();
       });
     });
@@ -79,15 +76,7 @@ export class PostsComponent {
   }
 
   scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  isImage(url: string): boolean {
-    return /\.(jpg|jpeg|png|gif|webp)$/i.test(url);
-  }
-
-  isVideo(url: string): boolean {
-    return /\.(mp4|webm|ogg)$/i.test(url);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   @HostListener("window:keydown", ["$event"])
@@ -100,9 +89,9 @@ export class PostsComponent {
   }
 
   sendMemeToComponent(meme: Meme) {
-    this.router.navigate(
-      ['/meme/' + Number(this.memes.indexOf(meme) + 1)],
-      { state: { meme } }
-    );
+    console.log(Number(this.memes.indexOf(meme) + 1));
+    this.router.navigate(["/meme/" + Number(this.memes.indexOf(meme) + 1)], {
+      state: { meme },
+    });
   }
 }
