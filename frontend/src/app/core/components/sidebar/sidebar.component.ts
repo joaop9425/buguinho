@@ -12,8 +12,7 @@ import { UserCountService } from "../../services/user-count.service";
 export class LeftSidebarComponent implements OnInit, OnDestroy {
   onlineUsers = 5; // Example count, replace with actual logic
   contributors = [
-    { name: "Contributor 1", photo: "assets/imgs/user1.jpg" },
-    { name: "Contributor 2", photo: "assets/imgs/user1.jpg" },
+    { name: "Jota", photo: "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4" },
     // Add more contributors as needed
   ];
   hours = "00:00:00";

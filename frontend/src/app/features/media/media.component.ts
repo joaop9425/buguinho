@@ -3,29 +3,10 @@ import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-media",
-  template: `
-    <div class="media-container">
-      <img
-        *ngIf="isImage(mediaUrl) || forceType === 'image'"
-        [src]="mediaUrl"
-        alt="Media Image"
-      />
-      <video
-        *ngIf="isVideo(mediaUrl) || forceType === 'video'"
-        [src]="mediaUrl"
-        controls
-        preload="metadata"
-      ></video>
-      <img
-        *ngIf="isGif(mediaUrl) || forceType === 'gif'"
-        [src]="mediaUrl"
-        alt="Media Gif"
-      />
-    </div>
-  `,
-  // styleUrls: ["./media.component.scss"],
   standalone: true,
   imports: [NgIf],
+  templateUrl: "./media.component.html",
+  styleUrl: "./media.component.scss",
 })
 export class MediaComponent {
   @Input() mediaUrl: string = "";

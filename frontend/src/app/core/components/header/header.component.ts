@@ -1,7 +1,8 @@
 import { NgIf } from '@angular/common';
-import { Component, HostListener, Renderer2, ElementRef } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router } from '@angular/router';
+import { GoogleAnalyticsService } from '../../services/google-analytics.service';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +18,11 @@ export class HeaderComponent {
   clickBug2 = false;
   clickCountBug2 = 0;
 
-  constructor(public router: Router, private renderer: Renderer2, private el: ElementRef) {}
+  constructor(public router: Router, private renderer: Renderer2, private el: ElementRef, private gaService: GoogleAnalyticsService) {}
+
+  trackClick() {
+    this.gaService.event('button_click', { label: 'Botão principal' });
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

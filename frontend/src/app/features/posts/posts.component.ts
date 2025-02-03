@@ -3,8 +3,8 @@ import { Component, HostListener } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { MemesService } from "../../core/services/memes.service";
 import { TitleService } from "../../core/services/title.service";
-import { MediaComponent } from "./media.component";
-import { Meme, Memes } from "./memes.model";
+import { MediaComponent } from "../media/media.component";
+import { Meme, Memes } from "./model/memes.model";
 
 @Component({
   selector: "app-posts",
@@ -89,8 +89,7 @@ export class PostsComponent {
   }
 
   sendMemeToComponent(meme: Meme) {
-    console.log(Number(this.memes.indexOf(meme) + 1));
-    this.router.navigate(["/meme/" + Number(this.memes.indexOf(meme) + 1)], {
+    this.router.navigate(["/meme", this.memes.indexOf(meme) + 1], {
       state: { meme },
     });
   }

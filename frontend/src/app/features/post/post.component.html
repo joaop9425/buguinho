@@ -1,12 +1,12 @@
 <div class="postagens-container">
-    <div class="meme">
-        <h3>Meme #{{meme}}</h3>
-        <p>teste</p>
-        <img src="https://via.placeholder.com/300x200" alt="Meme" />
+    <mat-card class="meme">
+        <h3>{{ meme.title }}</h3>
+        <img [src]="meme.mediaUrl" alt="Meme" />
+        <p>{{ meme.text }}</p>
         <p class="center">
-            <strong>Postado por:</strong>
-            <span class="author-name">jp</span>
-            <img class="author-photo" src="https://via.placeholder.com/30x20" alt="Foto Autor" />
-        </p>   
-    </div> 
+            <strong>Postado por: </strong>
+            <span class="author-name">{{ meme.username }}</span>
+            <img class="author-photo" [src]="meme.userPhoto" alt="Foto Autor" />
+        </p>
+    </mat-card> 
 </div>

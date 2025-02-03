@@ -1,6 +1,6 @@
 <header [class.scrolled]="scrolled">
   <div class="logo">
-    <a (click)="router.navigate(['/']); scrollToTop()">
+    <a (click)="router.navigate(['/']); scrollToTop(); trackClick()">
       <img src="assets/imgs/logo.webp" alt="Logo">
     </a>
   </div>
@@ -10,6 +10,6 @@
   </div>
   <nav>
     <a (click)="router.navigate(['/']); scrollToTop()" routerLink="/" routerLinkActive="active">Início</a>
-    <a (click)="router.navigate(['/sobre'])" routerLink="/sobre" routerLinkActive="active">Sobre</a>
+    <!-- <a (click)="router.navigate(['/sobre'])" routerLink="/sobre" routerLinkActive="active">Sobre</a> -->
   </nav>
 </header>

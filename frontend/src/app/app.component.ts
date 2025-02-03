@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -8,6 +8,8 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { TitleService } from './core/services/title.service';
+import { GoogleAnalyticsService } from './core/services/google-analytics.service';
+import { CookieBannerComponent } from "./core/components/cookie-banner/cookie-banner.component";
 
 @Component({
   selector: 'app-root',
@@ -19,15 +21,27 @@ import { TitleService } from './core/services/title.service';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-  ],
+    CookieBannerComponent,
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   titlePage = 'Buguinho';
-  constructor(private title: TitleService, private route: ActivatedRoute) {
+  constructor(
+    private title: TitleService, 
+    private route: ActivatedRoute, 
+    private router: Router, 
+    private gaService: GoogleAnalyticsService,
+  ) {
     this.title.set(this.titlePage);
     this.startMatrixEffect();
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.gaService.event('page_view', { page_path: event.urlAfterRedirects });
+      }
+    });
   }
 
   startMatrixEffect() {
