@@ -1,5 +1,117 @@
 [
   {
+    "title": "Linux",
+    "text": "diretórios basico",
+    "mediaUrl": "https://i.pinimg.com/736x/84/70/5c/84705c4445afbc1587c836ad8389ddd5.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "REST",
+    "text": "metodos",
+    "mediaUrl": "https://i.pinimg.com/736x/a8/59/35/a859354f9011c68a21a09ccc316e7e6d.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "REST",
+    "text": "metodos",
+    "mediaUrl": "https://i.pinimg.com/736x/ae/8e/2e/ae8e2ee34dc6d6a633950e1ec832a40f.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "REST",
+    "text": "basico",
+    "mediaUrl": "https://i.pinimg.com/736x/72/d4/4b/72d44be95b472e03feac1ff978b197d6.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "HTML",
+    "text": "input",
+    "mediaUrl": "https://i.pinimg.com/736x/24/c5/3e/24c53ed04297c73a4fe146aa1fdcdc68.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "HTML",
+    "text": "semantica",
+    "mediaUrl": "https://i.pinimg.com/736x/0a/5f/0f/0a5f0f7f0c1e02022a0a96ca9a4ab1f0.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "HTML",
+    "text": "basico",
+    "mediaUrl": "https://i.pinimg.com/736x/2c/c6/39/2cc6398c418bc6e6c42949bb447a212e.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "SQL",
+    "text": "Join",
+    "mediaUrl": "https://i.pinimg.com/736x/09/a1/98/09a1987a4c3eba6b672a668d26c990b8.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "GIT",
+    "text": "basico",
+    "mediaUrl": "https://i.pinimg.com/736x/64/4b/77/644b770bb91d0d098246b4939b469aac.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Python",
+    "text": "basico",
+    "mediaUrl": "https://i.pinimg.com/736x/90/b5/3f/90b53fd55ce34685522f0a548ba3728a.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JS",
+    "text": "generators",
+    "mediaUrl": "https://i.pinimg.com/736x/20/0a/df/200adfad7c2666165e250eb89492df19.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JS",
+    "text": "escopo de variavéis",
+    "mediaUrl": "https://i.pinimg.com/736x/de/96/93/de96930975b177c2cde02e464539d40d.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JS",
+    "text": "manipulação de Datas",
+    "mediaUrl": "https://i.pinimg.com/736x/15/b2/13/15b213e8f1235e514a1bdda3224f02d2.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "JS",
+    "mediaUrl": "https://i.pinimg.com/736x/ef/b6/e3/efb6e3a3e01b45e0905f8d1dd8d074e8.jpg",
+    "text": "manipulação de Arrays",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "DDD",
+    "text": "Impressão DDD",
+    "mediaUrl": "https://i.pinimg.com/736x/ee/21/66/ee2166b911ec9689069f942d8da818a1.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
+    "title": "Inspiração",
+    "text": "Copia mas não faz igual",
+    "mediaUrl": "https://i.pinimg.com/736x/f6/77/e2/f677e2d8583ff55c8645a7409ea9f8dc.jpg",
+    "userPhoto": "https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba695a42ab05a41f4a243d397770b9770&v=4",
+    "username": "Jota"
+  },
+  {
     "title": "Código no papel",
     "text": "Mas é só criar um compilador que entenda garranchos",
     "mediaUrl": "https://i.pinimg.com/736x/6f/83/f4/6f83f49c8ab95163c2357aea8f8e95ab.jpg",
