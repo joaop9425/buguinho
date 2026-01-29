@@ -18,6 +18,13 @@ Este projeto foi desenvolvido com a ajuda do **ChatGPT**, que colaborou ativamen
 - **Hospedagem:** GitHub Pages.
 - **Armazenamento de Memes:** JSON local.
 
+Atualização 29/01/2026...
+Adicionei o .agent ```bash 
+npx @vudovn/ag-kit init
+``` 
+
+Agora uso o Antigravity e vamos ver onde chegamos...
+
 ---
 
 ## 🚀 Como Executar o Projeto Localmente
