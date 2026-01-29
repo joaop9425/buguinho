@@ -1,0 +1,70 @@
+{
+  "$ref": "#/definitions/memes",
+  "definitions": {
+    "memes": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "mediaUrl": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 0
+            }
+          ]
+        },
+        "userPhoto": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 0
+            }
+          ]
+        },
+        "username": {
+          "type": "string"
+        },
+        "pubDate": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "username",
+        "pubDate"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

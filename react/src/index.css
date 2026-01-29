@@ -1,48 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 220 26% 6%;
-    --foreground: 180 100% 95%;
+    --background: 220 33% 98%;
+    /* Slate-50 equivalent */
+    --foreground: 220 40% 15%;
+    /* Slate-900 equivalent */
 
-    --card: 220 20% 10%;
-    --card-foreground: 180 100% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 180 100% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
 
-    --primary: 158 100% 50%;
-    --primary-foreground: 220 26% 6%;
+    --primary: 221 83% 53%;
+    /* Blue-600 #2563EB */
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 187 100% 50%;
-    --secondary-foreground: 220 26% 6%;
+    --secondary: 215 25% 27%;
+    /* Slate-700 #334155 */
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 180 20% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 158 100% 50%;
-    --accent-foreground: 220 26% 6%;
+    --accent: 25 95% 53%;
+    /* Orange-600 #EA580C */
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 180 100% 95%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 158 100% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
+  }
 
-    /* Tech gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(158 100% 50%), hsl(187 100% 50%));
-    --gradient-card: linear-gradient(135deg, hsl(220 20% 12%), hsl(220 20% 8%));
-    --glow-primary: 0 0 20px hsl(158 100% 50% / 0.3);
-    --glow-secondary: 0 0 20px hsl(187 100% 50% / 0.3);
+  .dark {
+    --background: 222 47% 11%;
+    /* Slate-950 #020617 */
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    /* Blue-500 #3B82F6 */
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 19% 27%;
+    /* Slate-700 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 25 100% 60%;
+    /* Orange-500 #F97316 */
+    --accent-foreground: 222 47% 11%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 76% 48%;
   }
 }
 
@@ -52,6 +80,65 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased font-sans selection:bg-primary/20 selection:text-primary;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    position: relative;
   }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 50;
+    filter: contrast(150%) brightness(100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-balance;
+  }
+}
+
+@layer utilities {
+  .reveal-text {
+    @apply opacity-0 animate-[reveal_1s_cubic-bezier(0.16,1,0.3,1)_forwards];
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0px);
+    }
+  }
+}
+
+@layer components {
+  .btn-modular {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-semibold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-6 py-3 cursor-pointer;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

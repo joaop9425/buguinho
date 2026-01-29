@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const lastUpdated = "29 de Janeiro de 2026";
+---
+
+<BaseLayout title="Termos | Buguinho Archive">
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-48">
+        <header class="mb-24">
+            <h1
+                class="font-display text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-6"
+            >
+                Terms of <br />
+                <span class="text-primary italic">Service</span>
+            </h1>
+            <p
+                class="text-muted-foreground uppercase tracking-[0.3em] text-[10px] font-bold"
+            >
+                Última atualização: {lastUpdated}
+            </p>
+        </header>
+
+        <div class="prose prose-invert prose-primary max-w-none">
+            <section class="mb-16 reveal-item">
+                <h2
+                    class="font-display text-2xl font-bold uppercase tracking-tight mb-4 text-foreground"
+                >
+                    1. Aceitação do Caos
+                </h2>
+                <p class="text-muted-foreground leading-relaxed mb-4">
+                    Ao acessar o Buguinho Archive, você concorda que o
+                    desenvolvimento de software é inerentemente caótico e que
+                    rir dos bugs é a melhor forma de terapia.
+                </p>
+            </section>
+
+            <section class="mb-16 reveal-item" style="animation-delay: 0.1s">
+                <h2
+                    class="font-display text-2xl font-bold uppercase tracking-tight mb-4 text-foreground"
+                >
+                    2. Propriedade Intelectual
+                </h2>
+                <p class="text-muted-foreground leading-relaxed mb-4">
+                    Manteremos os links para as fontes originais sempre que
+                    possível. O conteúdo curado é para fins de entretenimento e
+                    preservação histórica. Se você encontrar um bug (no site,
+                    não no seu código), ele é considerado uma "feature
+                    imersiva".
+                </p>
+            </section>
+
+            <section class="mb-16 reveal-item" style="animation-delay: 0.2s">
+                <h2
+                    class="font-display text-2xl font-bold uppercase tracking-tight mb-4 text-foreground"
+                >
+                    3. Responsabilidade Limitada
+                </h2>
+                <p class="text-muted-foreground leading-relaxed mb-4">
+                    Não nos responsabilizamos por crises de riso, nostalgia de
+                    linguagens legadas ou vontade súbita de refatorar sistemas
+                    estáveis após visualizar nossos artefatos.
+                </p>
+            </section>
+
+            <section class="mb-16 reveal-item" style="animation-delay: 0.3s">
+                <h2
+                    class="font-display text-2xl font-bold uppercase tracking-tight mb-4 text-foreground"
+                >
+                    4. Uso do Acervo
+                </h2>
+                <p class="text-muted-foreground leading-relaxed mb-4">
+                    Sinta-se livre para compartilhar os links dos artefatos. O
+                    conhecimento (e a piada) deve ser livre, assim como o
+                    software open source que tanto amamos.
+                </p>
+            </section>
+        </div>
+
+        <div class="mt-24 pt-8 border-t border-border">
+            <a
+                href="/"
+                class="text-[10px] font-bold uppercase tracking-[0.3em] text-primary hover:opacity-70 transition-opacity flex items-center gap-2"
+            >
+                <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Regressar ao Início
+            </a>
+        </div>
+    </main>
+</BaseLayout>
