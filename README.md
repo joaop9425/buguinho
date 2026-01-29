@@ -1,139 +1,72 @@
-# 🐛 Buguinho Memes Tech 🐞
+# 🐛 Buguinho Memes Tech 🐞 (Astro Edition)
 
-Bem-vindo ao **Buguinho Memes Tech**, um blog divertido e dinâmico voltado para devs, onde compartilhamos memes tech com aquela pitada de humor e sarcasmo que só quem programa entende!
+O **Buguinho Memes Tech** evoluiu! Agora somos uma aplicação **Astro + React** de alta performance, com memes gerenciados via Content Collections (Markdown).
 
 ---
 
-## 📜 Descrição
-
-O projeto **Buguinho Memes Tech** é um blog voltado para desenvolvedores que querem dar boas risadas (ou chorarem de nervoso) com memes sobre a vida tech. A aplicação é simples e responsiva, com funcionalidades como paginação, exibição de memes por categorias, e suporte para visualizar memes individualmente.
-
-Este projeto foi desenvolvido com a ajuda do **ChatGPT**, que colaborou ativamente na criação e otimização do código e na documentação do projeto. 🚀✨
+## 📜 Novidades da Versão 2026
+- **Arquitetura de Ilhas:** Astro para a estrutura estática e React para interatividade premium.
+- **Content Collections:** Cada meme agora é um arquivo `.md` organizado por data (`YYYY/MM/DD`).
+- **Design Premium:** Estética **Cyber-Flux** com tons Obsidian e Electric Azure, tipografia Outfit e animações fluidas com Framer Motion.
+- **Performance:** Carregamento ultra rápido com zero JS por padrão, ativado apenas nos cartões interativos.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Frontend:** Angular 16 com Angular Material.
-- **Hospedagem:** GitHub Pages.
-- **Armazenamento de Memes:** JSON local.
-
-Atualização 29/01/2026...
-Adicionei o .agent ```bash 
-npx @vudovn/ag-kit init
-``` 
-
-Agora uso o Antigravity e vamos ver onde chegamos...
+- **Framework:** [Astro 5.x](https://astro.build)
+- **UI:** [React 18](https://reactjs.org) + [Tailwind CSS](https://tailwindcss.com)
+- **Animações:** [Framer Motion](https://www.framer.com/motion/)
+- **Gerenciamento:** Astro Content Collections
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 🚀 Como Executar Localmente
 
-1. Clone o repositório no GitHub e acesse a pasta do projeto:  
+1. Clone o repositório e acesse a pasta `react` (onde reside o novo frontend):
 ```bash
-   git clone https://github.com/seu-usuario/buguinho-memes-tech.git
-   cd buguinho-memes-tech
+   git clone https://github.com/joaop9425/buguinho.git
+   cd buguinho/react
 ```
 
-2. Instale as dependências do projeto usando o gerenciador de pacotes npm:  
+2. Instale as dependências:
 ```bash
    npm install
 ```
 
-3. Inicie o servidor local com o Angular CLI:  
+3. Inicie o servidor de desenvolvimento:
 ```bash
-   ng serve
+   npm run dev
 ```
 
-4. Abra o navegador e acesse `http://localhost:4200` para visualizar o blog.
+4. Acesse `http://localhost:4321` (porta padrão do Astro).
 
 ---
 
 ## 🌐 Como Contribuir com Memes
 
-Adoraríamos receber suas contribuições! 😄 Para adicionar um novo meme ao blog, siga os passos abaixo:
+Agora os memes são arquivos Markdown! Para adicionar um novo:
 
-1. Edite o arquivo `memes.json`, que está localizado na pasta `src/assets/json`.  
-
-Adicione um novo objeto ao arquivo no formato:
-
-```json
-   {
-      "title": "Título do Meme",
-      "mediaUrl": "URL da imagem do meme",
-      "text": "Descrição ou legenda do meme",
-      "username": "Seu nome ou nickname",
-      "userPhoto": "URL da sua foto de perfil (opcional)"
-   }
+1. Vá para `src/content/memes/YYYY/MM/DD/`.
+2. Crie um arquivo `.md` com o frontmatter:
+```markdown
+---
+title: "Título do Meme"
+text: "Descrição do meme"
+mediaUrl: "URL da imagem"
+userPhoto: "Sua foto"
+username: "Seu nome"
+pubDate: "2026-01-29"
+---
+Conteúdo opcional do meme em markdown aqui.
 ```
 
-2. Faça um fork do repositório clicando no botão "Fork" na página principal do repositório no GitHub.  
+---
 
-3. Após editar o arquivo `memes.json`, envie as alterações para o seu fork no GitHub:  
-```bash
-   git add src/assets/memes.json
-   git commit -m "Adicionado novo meme"
-   git push origin main
-```
+## 🧑‍💻 Autor
 
-4. Abra um Pull Request no repositório original, explicando suas alterações.  
-
-5. A contribuição será revisada, e se estiver de acordo, será integrada ao blog. 🎉
+Migrado e reestilizado por **Antigravity AI Agent** em parceria com [João Paulo](https://github.com/joaop9425).
 
 ---
 
-## 🌟 Como Contribuir no Desenvolvimento
-
-1. Siga os passos descritos na seção **Como Executar o Projeto Localmente** para configurar o ambiente.  
-
-2. Crie uma nova branch para desenvolver a funcionalidade ou correção desejada:  
-```bash
-   git checkout -b minha-nova-funcionalidade
-```
-
-3. Após finalizar as alterações, envie-as para o seu fork no GitHub:  
-```bash
-   git add .
-   git commit -m "Minha nova funcionalidade"
-   git push origin minha-nova-funcionalidade
-```
-
-4. Abra um Pull Request para revisão.
-
----
-
-## 💻 Tecnologias Utilizadas
-
-Frontend: Angular + Angular Material
-
-Design: Responsividade com CSS Flexbox e Grid
-
-Deploy: GitHub Pages
-
----
-
-## 🔝 Inspirações
-
-Este blog foi inspirado por clássicos da internet como:
-
-- [Ah Negão](https://www.ahnegao.com.br/)
-- [Não Intendo](https://www.naointendo.com.br/)
-- [Não Salvo](https://x.com/naosalvo)
-
-E, claro, por uma boa dose de tempo sobrando no dia a dia. 😅
-
----
-
-## 🐞 Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
-
----
-
-## 🧑‍💻☕😡 Autor
-
-Criado com algumas xícaras de café ☕ e muita raiva 😡 por [João Paulo](https://github.com/joaop9425), com a colaboração do **ChatGPT**.
-
----
-
-Esperamos que você se divirta tanto quanto nós criando e compartilhando memes incríveis para a comunidade dev! 🚀🐛
+Esperamos que você curta o novo visual e a performance absurda do Buguinho! 🚀🔥
