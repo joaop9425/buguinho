@@ -27,7 +27,7 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}memes/${SLUG}/`;
 <BaseLayout title={entry.data.title}>
   <div class="max-w-6xl mx-auto px-6 py-32">
     <a
-      href={`${base}`}
+      href={`${base}/`}
       class="group inline-flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-16 transition-all hover:-translate-x-2"
     >
       <svg
@@ -156,7 +156,7 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}memes/${SLUG}/`;
             <a
               href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
                 `${entry.data.title} - ${SHARE_URL}`,
-              )}`}
+              )}/`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-[#25D366] hover:border-[#25D366] transition-all"
@@ -173,7 +173,7 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}memes/${SLUG}/`;
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                 SHARE_URL,
-              )}`}
+              )}/`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-[#1877F2] hover:border-[#1877F2] transition-all"
@@ -190,7 +190,7 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}memes/${SLUG}/`;
             <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
                 entry.data.title,
-              )}&url=${encodeURIComponent(SHARE_URL)}`}
+              )}&url=${encodeURIComponent(SHARE_URL)}/`}
               target="_blank"
               rel="noopener noreferrer"
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-white hover:border-white transition-all bg-transparent"
