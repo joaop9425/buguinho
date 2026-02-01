@@ -17,7 +17,7 @@ const { Content } = await entry.render();
 <BaseLayout title={entry.data.title}>
   <div class="max-w-6xl mx-auto px-6 py-32">
     <a
-      href="/"
+      href={Astro.resolve('/')}
       class="group inline-flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-16 transition-all hover:-translate-x-2"
     >
       <svg
