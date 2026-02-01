@@ -17,7 +17,7 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={`${base}favicon.ico'} />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.ico`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | Buguinho Memes</title>
   </head>
@@ -33,7 +33,7 @@ const base = import.meta.env.BASE_URL;
       >
         <a href={`${base}`} class="group flex items-center gap-3">
           <img
-            src="/images/joaninha-nobg.png"
+            src={`${base}images/joaninha-nobg.png`}
             alt="Buguinho Logo"
             class="w-10 h-10 object-contain group-hover:rotate-6 transition-transform"
           />
