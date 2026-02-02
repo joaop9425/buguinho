@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { getThumbnailUrl, isVideo } from '../lib/media';
 
 interface MemeCardProps {
   title: string;
@@ -21,6 +22,8 @@ export const MemeCard = ({
   index
 }: MemeCardProps) => {
   const [currentOrigin, setCurrentOrigin] = useState('');
+  const isMediaVideo = isVideo(mediaUrl);
+  const thumbnailUrl = getThumbnailUrl(mediaUrl);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -57,10 +60,7 @@ export const MemeCard = ({
           />
         ) : (
           <img
-            src={mediaUrl.includes('youtube.com') || mediaUrl.includes('youtu.be')
-              ? `https://img.youtube.com/vi/${mediaUrl.split('v=')[1]?.split('&')[0] || mediaUrl.split('/').pop()}/maxresdefault.jpg`
-              : mediaUrl
-            }
+            src={thumbnailUrl}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
@@ -69,6 +69,7 @@ export const MemeCard = ({
             }}
           />
         )}
+
 
         {/* Subtle overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />

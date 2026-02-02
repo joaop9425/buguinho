@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEmbedUrl, getMediaType } from "../../lib/media";
 
 export async function getStaticPaths() {
   const memes = await getCollection("memes");
@@ -10,7 +11,21 @@ export async function getStaticPaths() {
   }));
 }
 
-const { entry } = Astro.props;
+type Props = {
+  entry: {
+    slug: string;
+    data: {
+      title: string;
+      mediaUrl: string;
+      userPhoto: string;
+      username: string;
+      pubDate: string;
+    };
+    render: () => Promise<{ Content: any }>;
+  };
+};
+
+const { entry } = Astro.props as Props;
 const { Content } = await entry.render();
 
 /* ==============================
@@ -22,6 +37,9 @@ const SLUG = entry.slug;
 const base = import.meta.env.BASE_URL;
 
 const SHARE_URL = `${SITE_URL}${BASE_URL}meme/${SLUG}/`;
+const mediaUrl = entry.data.mediaUrl || "";
+const embedUrl = getEmbedUrl(mediaUrl);
+const mediaType = getMediaType(mediaUrl);
 ---
 
 <BaseLayout title={entry.data.title}>
@@ -47,14 +65,46 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}meme/${SLUG}/`;
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
       <div class="lg:col-span-7 relative group">
-        <div class="bg-muted border border-border overflow-hidden">
+        <div
+          class="bg-muted border border-border overflow-hidden rounded-xl shadow-2xl flex items-center justify-center min-h-[400px]"
+        >
           {
             (() => {
-              const url = entry.data.mediaUrl!.toLowerCase();
-              if (url.endsWith(".mp4") || url.endsWith(".webm")) {
+              // 1. Raw HTML / Widget (SociableKIT, custom iframes, etc.)
+              if (mediaType === "raw-html") {
+                // If it's an iframe, we try to make it responsive
+                const processedHtml = mediaUrl.includes("<iframe")
+                  ? mediaUrl
+                      .replace(/width="?\d+"?/, 'width="100%"')
+                      .replace(/height="?\d+"?/, 'height="100%"')
+                  : mediaUrl;
+
+                return (
+                  <div class="w-full flex flex-col items-center justify-center bg-black/20 backdrop-blur-sm p-4 rounded-lg">
+                    <div
+                      class="w-full h-full flex items-center justify-center overflow-auto"
+                      set:html={processedHtml}
+                    />
+                    {mediaUrl.includes("pinterest.com") && (
+                      <p class="text-[9px] text-muted-foreground py-2 italic">
+                        Dica: Alguns vídeos do Pinterest requerem clique para
+                        abrir na plataforma devido a restrições do autor.
+                      </p>
+                    )}
+                    {mediaUrl.includes("sociablekit") && (
+                      <p class="text-[9px] text-primary py-2 font-bold uppercase tracking-widest">
+                        SociableKIT Artifact Loaded
+                      </p>
+                    )}
+                  </div>
+                );
+              }
+
+              // 2. Direct Video File
+              if (mediaType === "direct-video") {
                 return (
                   <video
-                    src={entry.data.mediaUrl}
+                    src={mediaUrl}
                     controls
                     autoplay
                     muted
@@ -62,50 +112,97 @@ const SHARE_URL = `${SITE_URL}${BASE_URL}meme/${SLUG}/`;
                     class="w-full h-auto"
                   />
                 );
-              } else if (
-                url.includes("youtube.com") ||
-                url.includes("youtu.be")
-              ) {
-                const videoId =
-                  entry.data.mediaUrl!.split("v=")[1]?.split("&")[0] ||
-                  entry.data.mediaUrl!.split("/").pop();
+              }
+
+              // 3. Twitter / X Widget
+              if (mediaType === "twitter") {
                 return (
-                  <div class="aspect-video w-full">
+                  <div class="w-full flex items-center justify-center py-8 px-4 bg-white/5 backdrop-blur-sm rounded-lg">
+                    <blockquote
+                      class="twitter-tweet"
+                      data-theme="dark"
+                      data-align="center"
+                    >
+                      <a href={mediaUrl}>Loading artifact from X...</a>
+                    </blockquote>
+                  </div>
+                );
+              }
+
+              // 4. Standard Embeds (YouTube, Instagram, Pinterest Pins)
+              if (embedUrl) {
+                let aspectClass = "aspect-video";
+                if (
+                  mediaType === "instagram-reel" ||
+                  mediaType === "pinterest"
+                ) {
+                  aspectClass =
+                    "aspect-[9/16] max-h-[85vh] w-full max-w-[500px]";
+                } else if (mediaType === "instagram") {
+                  aspectClass = "aspect-[4/5] max-h-[80vh]";
+                }
+
+                return (
+                  <div
+                    class={`w-full bg-black flex items-center justify-center overflow-hidden mx-auto ${aspectClass}`}
+                  >
                     <iframe
-                      class="w-full h-full"
-                      src={`https://www.youtube.com/embed/${videoId}`}
+                      class="w-full h-full border-none"
+                      src={embedUrl}
                       frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      scrolling="no"
+                      style="border:none;overflow:hidden;display:block;"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
                     />
                   </div>
                 );
-              } else if (url.includes("vimeo.com")) {
-                const videoId = entry.data.mediaUrl!.split("/").pop();
-                return (
-                  <div class="aspect-video w-full">
-                    <iframe
-                      class="w-full h-full"
-                      src={`https://player.vimeo.com/video/${videoId}`}
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowfullscreen
-                    />
-                  </div>
-                );
-              } else {
-                return (
+              }
+
+              // 5. Default Image
+              return (
+                <div class="flex flex-col items-center gap-4 py-12">
                   <img
-                    src={entry.data.mediaUrl}
+                    src={mediaUrl}
                     alt={entry.data.title}
                     class="w-full h-auto transition-transform duration-700 hover:scale-105"
                     onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800'"
                   />
-                );
-              }
+                  {mediaUrl.includes("pin.it") && (
+                    <a
+                      href={mediaUrl}
+                      target="_blank"
+                      class="text-xs text-primary underline"
+                    >
+                      Abrir no Pinterest (Link encurtado)
+                    </a>
+                  )}
+                </div>
+              );
             })()
           }
         </div>
+
+        {/* Third-party Scripts */}
+        {
+          mediaType === "pinterest" && (
+            <script
+              async
+              defer
+              src="https://assets.pinterest.com/js/pinit.js"
+            />
+          )
+        }
+        {
+          mediaType === "twitter" && (
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            />
+          )
+        }
+
         <!-- Decorative corner -->
         <div
           class="absolute -top-4 -right-4 w-24 h-24 bg-primary/5 -z-10 border border-primary/20"
