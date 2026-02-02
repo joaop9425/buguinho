@@ -97,7 +97,7 @@ export const MemeCard = ({
           <div className="flex items-center gap-3">
             {/* WhatsApp */}
             <a
-              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(title + " - " + currentOrigin + "/buguinho/meme/" + slug)}/`}
+              href={`https://api.whatsapp.com/send?text=${encodeURIComponent(title + " - " + currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#25D366] transition-colors p-1"
@@ -109,7 +109,7 @@ export const MemeCard = ({
             </a>
             {/* Facebook */}
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug)}/`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#1877F2] transition-colors p-1"
@@ -121,7 +121,7 @@ export const MemeCard = ({
             </a>
             {/* X (Twitter) */}
             <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug)}/`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors p-1"
