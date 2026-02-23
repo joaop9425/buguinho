@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { getThumbnailUrl, isVideo } from '../lib/media';
+import * as gtag from '../lib/gtag';
 
 interface MemeCardProps {
   title: string;
@@ -25,6 +26,28 @@ export const MemeCard = ({
   const isMediaVideo = isVideo(mediaUrl);
   const thumbnailUrl = getThumbnailUrl(mediaUrl);
 
+  const trackClick = () => {
+    gtag.event({
+      action: 'select_content',
+      category: 'engagement',
+      label: 'meme_card_click',
+      content_type: 'meme',
+      item_id: slug,
+      item_name: title
+    });
+  };
+
+  const trackShare = (platform: string) => {
+    gtag.event({
+      action: 'share',
+      category: 'social',
+      label: platform,
+      content_type: 'meme',
+      item_id: slug,
+      item_name: title
+    });
+  };
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setCurrentOrigin(window.location.origin);
@@ -43,7 +66,11 @@ export const MemeCard = ({
       }}
       className="group relative bg-card border border-border overflow-hidden flex flex-col h-full hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300"
     >
-      <a href={`/buguinho/meme/${slug}/`} className="absolute inset-0 z-10 pointer-events-auto mb-20">
+      <a
+        href={`/buguinho/meme/${slug}/`}
+        onClick={trackClick}
+        className="absolute inset-0 z-10 pointer-events-auto mb-20"
+      >
         <span className="sr-only">View {title}</span>
       </a>
 
@@ -100,6 +127,7 @@ export const MemeCard = ({
             <a
               href={`https://api.whatsapp.com/send?text=${encodeURIComponent(title + " - " + currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
+              onClick={() => trackShare('whatsapp')}
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#25D366] transition-colors p-1"
               title="Share on WhatsApp"
@@ -112,6 +140,7 @@ export const MemeCard = ({
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
+              onClick={() => trackShare('facebook')}
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-[#1877F2] transition-colors p-1"
               title="Share on Facebook"
@@ -124,6 +153,7 @@ export const MemeCard = ({
             <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(currentOrigin + "/buguinho/meme/" + slug + "/")}`}
               target="_blank"
+              onClick={() => trackShare('twitter')}
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors p-1"
               title="Share on X"

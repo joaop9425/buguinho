@@ -45,7 +45,7 @@ const mediaType = getMediaType(mediaUrl);
 <BaseLayout title={entry.data.title}>
   <div class="max-w-6xl mx-auto px-6 py-32">
     <a
-      href={`${base}/`}
+      href={`${base}`}
       class="group inline-flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-[0.3em] mb-16 transition-all hover:-translate-x-2"
     >
       <svg
@@ -256,6 +256,7 @@ const mediaType = getMediaType(mediaUrl);
               )}/`}
               target="_blank"
               rel="noopener noreferrer"
+              onclick={`gtag('event', 'share', { method: 'whatsapp', content_type: 'meme', item_id: '${entry.slug}', item_name: '${entry.data.title.replace(/'/g, "\\'")}' })`}
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-[#25D366] hover:border-[#25D366] transition-all"
               title="Share on WhatsApp"
             >
@@ -273,6 +274,7 @@ const mediaType = getMediaType(mediaUrl);
               )}/`}
               target="_blank"
               rel="noopener noreferrer"
+              onclick={`gtag('event', 'share', { method: 'facebook', content_type: 'meme', item_id: '${entry.slug}', item_name: '${entry.data.title.replace(/'/g, "\\'")}' })`}
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-[#1877F2] hover:border-[#1877F2] transition-all"
               title="Share on Facebook"
             >
@@ -290,6 +292,7 @@ const mediaType = getMediaType(mediaUrl);
               )}&url=${encodeURIComponent(SHARE_URL)}/`}
               target="_blank"
               rel="noopener noreferrer"
+              onclick={`gtag('event', 'share', { method: 'twitter', content_type: 'meme', item_id: '${entry.slug}', item_name: '${entry.data.title.replace(/'/g, "\\'")}' })`}
               class="w-12 h-12 flex items-center justify-center border border-border rounded-full text-foreground hover:text-white hover:border-white transition-all bg-transparent"
               title="Share on X"
             >

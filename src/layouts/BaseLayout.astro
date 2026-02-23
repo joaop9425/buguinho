@@ -20,6 +20,19 @@ const base = import.meta.env.BASE_URL;
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.ico`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | Buguinho Memes</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0220F6LER"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H0220F6LER");
+    </script>
   </head>
   <body
     class="bg-background text-foreground selection:bg-primary selection:text-white"
@@ -31,7 +44,7 @@ const base = import.meta.env.BASE_URL;
       <div
         class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
       >
-        <a href={`${base}/`} class="group flex items-center gap-3">
+        <a href={`${base}`} class="group flex items-center gap-3">
           <img
             src={`${base}images/joaninha-nobg.png`}
             alt="Buguinho Logo"
@@ -45,7 +58,7 @@ const base = import.meta.env.BASE_URL;
 
         <div class="hidden md:flex items-center gap-8">
           <a
-            href={`${base}/`}
+            href={`${base}`}
             class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
             >Home</a
           >

@@ -1,6 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MemeCard } from './MemeCard';
+import * as gtag from '../lib/gtag';
 
 interface MemeGridProps {
     groupedMemes: Record<string, any[]>;
@@ -19,8 +20,24 @@ export const FilterableMemeGrid = ({ groupedMemes, sortedDates }: MemeGridProps)
     const hasMore = !selectedDate && visibleGroups < sortedDates.length;
 
     const loadMore = () => {
+        gtag.event({
+            action: 'load_more',
+            category: 'engagement',
+            label: 'timeline_load_more',
+            value: visibleGroups + 3
+        });
         setVisibleGroups(prev => prev + 3);
     };
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const dateParam = params.get('date');
+        if (dateParam && sortedDates.includes(dateParam)) {
+            setSelectedDate(dateParam);
+            // Longer delay for initial mount to ensure layout is ready
+            setTimeout(() => scrollToDate(dateParam), 800);
+        }
+    }, []);
 
     const scrollToDate = (date: string) => {
         const element = document.getElementById(`date-${date}`);
@@ -62,7 +79,15 @@ export const FilterableMemeGrid = ({ groupedMemes, sortedDates }: MemeGridProps)
                     </h2>
                     <div className="flex flex-wrap justify-center gap-2">
                         <button
-                            onClick={() => setSelectedDate(null)}
+                            onClick={() => {
+                                gtag.event({
+                                    action: 'filter_date',
+                                    category: 'filter',
+                                    label: 'all_time'
+                                });
+                                setSelectedDate(null);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
                             className={`px-4 py-2 text-[10px] font-bold uppercase tracking-widest border transition-all ${selectedDate === null
                                 ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
                                 : 'bg-transparent text-muted-foreground border-border hover:border-primary/50 hover:text-primary'
@@ -73,7 +98,16 @@ export const FilterableMemeGrid = ({ groupedMemes, sortedDates }: MemeGridProps)
                         {sortedDates.slice(0, 7).map((date) => (
                             <button
                                 key={date}
-                                onClick={() => setSelectedDate(date)}
+                                onClick={() => {
+                                    gtag.event({
+                                        action: 'filter_date',
+                                        category: 'filter',
+                                        label: date
+                                    });
+                                    setSelectedDate(date);
+                                    // Small delay to allow current filtering animation if any, then scroll
+                                    setTimeout(() => scrollToDate(date), 50);
+                                }}
                                 className={`px-4 py-2 text-[10px] font-bold uppercase tracking-widest border transition-all ${selectedDate === date
                                     ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
                                     : 'bg-transparent text-muted-foreground border-border hover:border-primary/50 hover:text-primary'
@@ -110,7 +144,7 @@ export const FilterableMemeGrid = ({ groupedMemes, sortedDates }: MemeGridProps)
                                 ease: [0.16, 1, 0.3, 1],
                                 delay: (groupIndex % 3) * 0.15
                             }}
-                            className="group/date"
+                            className="group/date scroll-mt-32"
                         >
                             <div className="flex items-center gap-4 mb-8">
                                 <span className="w-12 h-[1px] bg-primary/30"></span>

@@ -20,6 +20,7 @@ sortedMemes.forEach((meme) => {
 });
 
 const timelineDates = Array.from(timelineMap.keys());
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Timeline | Buguinho Archive">
@@ -63,21 +64,30 @@ const timelineDates = Array.from(timelineMap.keys());
                                     <div
                                         class={`w-full md:w-1/2 ${isEven ? "md:text-right" : "md:text-left"}`}
                                     >
-                                        <time class="font-display text-4xl md:text-6xl font-bold text-foreground/20 hover:text-primary transition-colors cursor-default">
-                                            {(() => {
-                                                const [year, month, day] = date
-                                                    .split("-")
-                                                    .map(Number);
-                                                return new Date(
-                                                    year,
-                                                    month - 1,
-                                                    day,
-                                                ).toLocaleDateString("pt-BR", {
-                                                    day: "2-digit",
-                                                    month: "short",
-                                                });
-                                            })()}
-                                        </time>
+                                        <a
+                                            href={`${base}?date=${date}`}
+                                            class="block group"
+                                        >
+                                            <time class="font-display text-4xl md:text-6xl font-bold text-foreground/20 group-hover:text-primary transition-colors cursor-pointer">
+                                                {(() => {
+                                                    const [year, month, day] =
+                                                        date
+                                                            .split("-")
+                                                            .map(Number);
+                                                    return new Date(
+                                                        year,
+                                                        month - 1,
+                                                        day,
+                                                    ).toLocaleDateString(
+                                                        "pt-BR",
+                                                        {
+                                                            day: "2-digit",
+                                                            month: "short",
+                                                        },
+                                                    );
+                                                })()}
+                                            </time>
+                                        </a>
                                         <div class="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mt-2">
                                             {(() => {
                                                 const [year, month, day] = date
