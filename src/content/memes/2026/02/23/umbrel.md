@@ -6,9 +6,10 @@ userPhoto: 'https://avatars.githubusercontent.com/u/28512659?s=400&u=05920c6ba69
 username: 'Jota'
 pubDate: "2026-02-23"
 ---
-Cara, eu ganho muito mal pra ter sonho de comprar todas essas bagaça que vejo
-Mas vamos deixar aqui os links e tudo mais... 
-(Site Umbrel)[https://umbrel.com/?country=BR]
-(Github Umbrel)[https://github.com/getumbrel/umbrel]
-Só o resumo da descrição do github... 
+#Cara, eu ganho muito mal pra ter sonho de comprar todas essas bagaça que vejo
+##Mas vamos deixar aqui os links e tudo mais... 
+- [Site Umbrel](https://umbrel.com/?country=BR)
+- [Github Umbrel](https://github.com/getumbrel/umbrel)
+
+###Só o resumo da descrição do github... 
 "An elegant home server OS. Run OpenClaw, store your files and photos, run a Bitcoin node, and do more with over 300 apps in the Umbrel App Store"
